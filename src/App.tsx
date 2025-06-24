@@ -37,12 +37,12 @@ const App = () => (
               <Route path="/about-journal" element={<AboutJournal />} />
               <Route path="/instructions-to-authors" element={<InstructionsToAuthors />} />
               <Route path="/how-to-submit" element={<HowToSubmit />} />
-              <Route path="/chief-editor" element={<ChiefEditor />} />
+              {/* <Route path="/chief-editor" element={<ChiefEditor />} />
               <Route path="/editorial-secretary" element={<EditorialSecretary />} />
               <Route path="/advisory-board" element={<AdvisoryBoard />} />
               <Route path="/current-issue" element={<CurrentIssue />} />
               <Route path="/archive" element={<Archive />} />
-              <Route path="/special-issue" element={<SpecialIssue />} />
+              <Route path="/special-issue" element={<SpecialIssue />} /> */}
               <Route path="/ethics" element={<Ethics />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/register" element={<Register />} />

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-academic-blue rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg"><img src="/public/assets/Narayan Research and Education Logo-edit.png" alt="company-logo" /></span>
+                <span className="text-white font-bold text-lg"><img src="https://github.com/geekylearner13/mirrij/blob/main/public/assets/Narayan%20Research%20and%20Education%20Logo-edit.png?raw=true" alt="company-logo" /></span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Narayan Research</h3>

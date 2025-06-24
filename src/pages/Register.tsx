@@ -5,6 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const Register = () => {
+  const handleGoogleRegistration = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScF2uRH-xJAu31qp0xu0Zc3M05R72gHeY7JNXQbr20QMSe0SA/viewform?usp=header", "_blank");
+  };
+
   return (
     <div className="pt-16">
       {/* Header Section */}
@@ -40,28 +44,31 @@ const Register = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-600">
-                    Quick and secure registration using your Google account. 
+                    Quick and secure registration using our Google Forms. 
                     This is our recommended registration method for authors and reviewers.
                   </p>
                   
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <p className="text-sm text-gray-700 mb-3">
-                      <strong>Note:</strong> Google registration link will be provided here manually
+                      <strong>Registration Form:</strong> Click the button below to access our Google registration form
                     </p>
-                    <div className="border-2 border-dashed border-gray-300 p-4 rounded-lg text-center">
-                      <ExternalLink className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-                      <p className="text-gray-500 text-sm">
-                        [Google Registration Link Placeholder]
+                    <div className="border-2 border-green-300 bg-green-50 p-4 rounded-lg text-center">
+                      <ExternalLink className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                      <p className="text-green-700 text-sm font-medium">
+                        Google Registration Form Available
                       </p>
-                      <p className="text-xs text-gray-400 mt-1">
-                        Admin: Add Google registration link here
+                      <p className="text-xs text-green-600 mt-1">
+                        Click the button below to register
                       </p>
                     </div>
                   </div>
 
-                  <Button className="w-full bg-red-500 hover:bg-red-600">
+                  <Button 
+                    className="w-full bg-red-500 hover:bg-red-600"
+                    onClick={handleGoogleRegistration}
+                  >
                     <ExternalLink className="mr-2 w-4 h-4" />
-                    Register with Google
+                    Register with Google Form
                   </Button>
                 </CardContent>
               </Card>
@@ -105,23 +112,23 @@ const Register = () => {
                   {[
                     {
                       step: "1",
-                      title: "Click Registration Link",
-                      description: "Use the Google registration link provided above to start the process."
+                      title: "Click Registration Button",
+                      description: "Use the Google registration button above to open our registration form."
                     },
                     {
                       step: "2",
-                      title: "Google Authentication",
-                      description: "Sign in with your Google account or create a new one if needed."
+                      title: "Fill Registration Form",
+                      description: "Complete all required fields in the Google form with your academic and professional details."
                     },
                     {
                       step: "3",
-                      title: "Complete Profile",
-                      description: "Fill in your academic and professional details in the registration form."
+                      title: "Submit Form",
+                      description: "Review your information and submit the registration form."
                     },
                     {
                       step: "4",
-                      title: "Email Verification",
-                      description: "Check your email for verification link and confirm your account."
+                      title: "Email Confirmation",
+                      description: "You will receive a confirmation email once your registration is processed."
                     },
                     {
                       step: "5",

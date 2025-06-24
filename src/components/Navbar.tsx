@@ -43,7 +43,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-academic-blue rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg"><img src="/public/assets/Narayan Research and Education Logo-edit.png" alt="company-logo" /></span>
+              <span className="text-white font-bold text-lg"><img src="https://github.com/geekylearner13/mirrij/blob/main/public/assets/Narayan%20Research%20and%20Education%20Logo-edit.png?raw=true" alt="company-logo" /></span>
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-semibold text-gray-900">Narayan Research</h1>
