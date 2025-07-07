@@ -179,11 +179,11 @@ const Register = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-academic-blue" />
-                    <span className="text-gray-700">editornarayanaresearch@gmail.com</span>
+                    <span className="text-gray-700 break-all">editornarayanaresearch@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-academic-blue" />
-                    <span className="text-gray-700">publicationarticle146@gmail.com</span>
+                    <span className="text-gray-700 break-all">publicationarticle146@gmail.com</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     We typically respond to registration queries within 24 hours.

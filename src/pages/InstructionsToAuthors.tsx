@@ -1,7 +1,6 @@
 
-import { FileText, CheckCircle, AlertCircle, Download, Mail, Globe } from "lucide-react";
+import { FileText, CheckCircle, AlertCircle, Mail, Globe } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const InstructionsToAuthors = () => {
@@ -47,12 +46,12 @@ const InstructionsToAuthors = () => {
                     All manuscripts must be submitted through our online submission portal:
                   </p>
                   <div className="bg-gray-50 p-4 rounded-lg">
-                    <p className="font-medium text-academic-blue">https://www........</p>
+                    <p className="font-medium text-academic-blue">https://narayanresearch.in/</p>
                   </div>
                   <div className="flex items-center space-x-2 text-gray-700">
                     <Mail className="w-4 h-4 text-academic-blue" />
                     <span>In case of technical difficulties, contact us at:</span>
-                    <a href="mailto:editornarayanaresearch@gmail.com" className="text-academic-blue hover:underline font-medium">
+                    <a href="mailto:editornarayanaresearch@gmail.com" className="text-academic-blue hover:underline font-medium break-all">
                       editornarayanaresearch@gmail.com
                     </a>
                   </div>
@@ -94,7 +93,7 @@ const InstructionsToAuthors = () => {
                   ].map((item, index) => (
                     <div key={index} className="flex items-start space-x-3">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <span className="font-medium text-gray-900">{item.title}:</span>
                         <span className="text-gray-700 ml-2">{item.desc}</span>
                       </div>
@@ -122,23 +121,29 @@ const InstructionsToAuthors = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">Page Limits by Manuscript Type</h4>
-                  <div className="bg-gray-50 p-4 rounded-lg space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-gray-700">Original Research Articles</span>
-                      <span className="font-medium text-academic-blue">up to 20 pages</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-700">Review Articles</span>
-                      <span className="font-medium text-academic-blue">up to 15 pages</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-700">Short Communications/Case Reports</span>
-                      <span className="font-medium text-academic-blue">up to 8 pages</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-700">Letters to the Editor</span>
-                      <span className="font-medium text-academic-blue">up to 3 pages</span>
+                  <h4 className="font-semibold text-gray-900 mb-4">Page Limits by Manuscript Type</h4>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="space-y-3">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                          <span className="text-gray-700 font-medium">Original Research Articles</span>
+                          <span className="font-bold text-academic-blue">up to 20 pages</span>
+                        </div>
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                          <span className="text-gray-700 font-medium">Review Articles</span>
+                          <span className="font-bold text-academic-blue">up to 15 pages</span>
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                          <span className="text-gray-700 font-medium">Short Communications/Case Reports</span>
+                          <span className="font-bold text-academic-blue">up to 8 pages</span>
+                        </div>
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                          <span className="text-gray-700 font-medium">Letters to the Editor</span>
+                          <span className="font-bold text-academic-blue">up to 3 pages</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -158,7 +163,7 @@ const InstructionsToAuthors = () => {
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-3">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                        <div>
+                        <div className="min-w-0 flex-1">
                           <span className="font-medium text-gray-900">{item.title}</span>
                           {item.desc && <span className="text-gray-700 ml-2">: {item.desc}</span>}
                         </div>
@@ -178,7 +183,7 @@ const InstructionsToAuthors = () => {
                 <div className="flex items-center space-x-2 text-gray-700">
                   <Mail className="w-5 h-5 text-academic-blue" />
                   <span>For any queries regarding submission:</span>
-                  <a href="mailto:editornarayanaresearch@gmail.com" className="text-academic-blue hover:underline font-medium">
+                  <a href="mailto:editornarayanaresearch@gmail.com" className="text-academic-blue hover:underline font-medium break-all">
                     editornarayanaresearch@gmail.com
                   </a>
                 </div>

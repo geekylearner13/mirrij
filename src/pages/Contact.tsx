@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Clock, Globe, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Clock, Globe, MessageCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -62,25 +62,24 @@ const Contact = () => {
                   <h4 className="font-semibold text-gray-900 mb-2">📧 Email:</h4>
                   <div className="space-y-1 text-gray-700">
                     <p><strong>Manuscript Submission:</strong></p>
-                    <p className="text-academic-blue">editornarayanaresearch@gmail.com</p>
+                    <p className="text-academic-blue break-all">editornarayanaresearch@gmail.com</p>
                     <p><strong>General Inquiries:</strong></p>
-                    <p className="text-academic-blue">publicationarticle146@gmail.com</p>
+                    <p className="text-academic-blue break-all">publicationarticle146@gmail.com</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Phone & Timing */}
+            {/* Office Timing */}
             <Card className="h-full">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3">
-                  <Phone className="w-6 h-6 text-academic-blue" />
-                  <span>Phone / WhatsApp</span>
+                  <Clock className="w-6 h-6 text-academic-blue" />
+                  <span>Office Hours</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <p className="text-lg font-semibold text-academic-blue mb-2">📱 +91-7033113161</p>
                   <div className="flex items-center space-x-2 text-gray-600">
                     <Clock className="w-4 h-4" />
                     <span>🕘 Timing: 10:00 AM – 6:00 PM (IST)</span>
@@ -101,7 +100,7 @@ const Contact = () => {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">🌐 Official Website:</h4>
-                  <p className="text-academic-blue mb-4">xxxxxxxxxx</p>
+                  <p className="text-academic-blue mb-4">https://narayanresearch.in/</p>
                   
                   <h4 className="font-semibold text-gray-900 mb-3">📣 Connect with us:</h4>
                   <div className="space-y-2">
@@ -136,9 +135,9 @@ const Contact = () => {
                   <Mail className="w-12 h-12 text-academic-blue mx-auto" />
                   <h3 className="text-xl font-semibold">For Manuscript Submission</h3>
                   <p className="text-gray-600">Submit your research papers and manuscripts</p>
-                  <Button className="w-full">
-                    Email: editornarayanaresearch@gmail.com
-                  </Button>
+                  <div className="text-academic-blue break-all text-sm">
+                    editornarayanaresearch@gmail.com
+                  </div>
                 </CardContent>
               </Card>
 
@@ -147,9 +146,9 @@ const Contact = () => {
                   <MessageCircle className="w-12 h-12 text-academic-blue mx-auto" />
                   <h3 className="text-xl font-semibold">For General Inquiries</h3>
                   <p className="text-gray-600">Questions about the journal and publication process</p>
-                  <Button className="w-full">
-                    Email: publicationarticle146@gmail.com
-                  </Button>
+                  <div className="text-academic-blue break-all text-sm">
+                    publicationarticle146@gmail.com
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -160,4 +159,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact

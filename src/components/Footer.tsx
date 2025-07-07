@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Youtube, Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Facebook, Instagram, Youtube, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,25 +31,16 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-academic-blue-light mt-0.5 flex-shrink-0" />
-                <div className="text-sm">
-                  <p className="text-gray-300">Manuscript Submission: editornarayanaresearch@gmail.com</p>
-                  <p className="text-gray-300">General Inquiries: publicationarticle146@gmail.com</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-academic-blue-light mt-0.5 flex-shrink-0" />
-                <div className="text-sm">
-                  <p className="text-gray-300">+91- 7033113161</p>
-                  <p className="text-gray-300">WhatsApp: +91- 7033113161</p>
+                <div className="text-sm min-w-0">
+                  <p className="text-gray-300 break-all">editor@mirrij.org</p>
+                  <p className="text-gray-300 break-all">info@narayanresearch.org</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-academic-blue-light mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-gray-300">
-                  Multidisciplinary International Review Research and Innovation Journal (MIRRIJ)
-Narayan Research and Education
-<br />
-                  Jharkhand<br />
+                  Journal Office Address<br />
+                  City, State - PIN Code<br />
                   India
                 </p>
               </div>
@@ -57,8 +48,8 @@ Narayan Research and Education
                 <Clock className="w-5 h-5 text-academic-blue-light mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   <p>Office Hours:</p>
-                  <p>10:00 AM – 6:00 PM (IST), Monday to Saturday</p>
-                  
+                  <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                  <p>Sat: 9:00 AM - 2:00 PM</p>
                 </div>
               </div>
             </div>
